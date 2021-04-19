@@ -6,11 +6,11 @@ class IncDecBut extends React.Component{
     render(){
       console.log(this.props.count,'count');
       return(
-          <div>
+          <div  style={{backgroundColor:'grey'}}>
             <p>Count: {this.props.count} </p>
             <button style={{backgroundColor:'aquamarine'}} onClick={this.props.increment}>Increment</button> 
-            <button onClick={this.props.decrement}>Decrement</button> 
-            <button onClick={this.props.reset}>Reset</button>
+            <button style={{backgroundColor:'aquamarine'}} onClick={this.props.decrement}>Decrement</button> 
+            <button style={{backgroundColor:'aquamarine'}} onClick={this.props.reset}>Reset</button>
           </div>
       ) ; 
     }
